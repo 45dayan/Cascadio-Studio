@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cascadio Studio | Luxury Salon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./logo.jpg.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">CASCADIO<span> STUDIO</span></div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#booking" class="nav-btn">Book Now</a></li>
+  </ul>
+
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</nav>
+
+<!-- Overlay -->
+<div class="menu-overlay"></div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Welcome to <span>Cascadio Studio</span></h1>
+    <p>Where elegance meets artistry. Premium hair & beauty experiences worldwide.</p>
+    <a href="#booking" class="cta-btn">Book Appointment</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <h2 class="section-title">Our Signature Services</h2>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Haircut & Styling</h3>
+      <p>Modern cuts tailored to your personality.</p>
+      <div class="price">$40</div>
+    </div>
+
+    <div class="service-card">
+      <h3>Hair Coloring</h3>
+      <p>Premium international color brands.</p>
+      <div class="price">$90</div>
+    </div>
+
+    <div class="service-card">
+      <h3>Luxury Facial</h3>
+      <p>Advanced skin rejuvenation therapy.</p>
+      <div class="price">$70</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <h2 class="section-title">Cascadio Creations</h2>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a" alt="">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+  <div class="booking-container">
+    <h2 class="section-title">Book Your Experience</h2>
+
+    <form id="appointment-form" action="https://formspree.io/f/xaqdzrea" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+
+      <select name="salon" required>
+        <option value="">Select Studio Location</option>
+        <option>Cascadio Studio – New York</option>
+        <option>Cascadio Studio – London</option>
+        <option>Cascadio Studio – Dubai</option>
+        <option>Cascadio Studio – Paris</option>
+      </select>
+
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option>Haircut & Styling</option>
+        <option>Hair Coloring</option>
+        <option>Luxury Facial</option>
+      </select>
+
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+
+      <button type="submit" class="cta-btn">Confirm Booking</button>
+    </form>
+
+    <div id="booking-status"></div>
+  </div>
+</section>
+
+<footer style="text-align:center; padding:30px; background:#2c3e50; color:white;">
+  © 2026 Cascadio Studio. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
