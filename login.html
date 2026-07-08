@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Cascadio Studio</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+
+        <div class="brand">
+            <h1>CASCADIO STUDIO</h1>
+            <p>Luxury Salon Experience</p>
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <!-- Login -->
+
+        <div class="form login-form">
+
+            <h2>Welcome Back</h2>
+
+            <p>Login to continue your beauty journey.</p>
+
+            <form>
+
+                <input type="email"
+                       placeholder="Email Address"
+                       required>
+
+                <input type="password"
+                       placeholder="Password"
+                       required>
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+            <p class="switch">
+                Don't have an account?
+                <span id="showRegister">Register</span>
+            </p>
+
+        </div>
+
+        <!-- Register -->
+
+        <div class="form register-form">
+
+            <h2>Create Account</h2>
+
+            <p>Join Cascadio Studio today.</p>
+
+            <form>
+
+                <input type="text"
+                       placeholder="Full Name"
+                       required>
+
+                <input type="email"
+                       placeholder="Email Address"
+                       required>
+
+                <input type="password"
+                       placeholder="Password"
+                       required>
+
+                <input type="password"
+                       placeholder="Confirm Password"
+                       required>
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+            <p class="switch">
+                Already have an account?
+                <span id="showLogin">Login</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="auth.js"></script>
+
+</body>
+</html>
